@@ -1,0 +1,315 @@
+/* Import */
+@import url("./components.scss");
+* {
+  font-family: var(--font);
+  scroll-behavior: smooth;
+}
+
+*::-moz-selection {
+  background-color: var(--first-color);
+  color: var(--white);
+}
+
+*::selection {
+  background-color: var(--first-color);
+  color: var(--white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  background-color: #fafafa;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-timeline: 3s;
+  transition: var(--transition);
+}
+
+body::-moz-selection {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+body::selection {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+body::-webkit-scrollbar {
+  background-color: var(--color);
+  border-radius: 50px;
+  width: 6px;
+  padding: 3em;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: #fff;
+  border-radius: 100vw;
+  width: 4px;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green) !important;
+  border-radius: 5px;
+  width: 1px;
+  padding: 5em;
+  border: 0.25em solid transparent;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--first-color) !important;
+  border-radius: 2px;
+  width: 0.2px;
+  padding: 5em;
+  border: 0.18em solid var(--white);
+  z-index: 1;
+}
+
+.load {
+  background-color: #fff;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0s ease-in 0.9s;
+}
+
+.load .loader img {
+  animation: zoomIn 1s;
+}
+
+nav a {
+  transition: all 0.3s ease-in 0s;
+}
+nav a:hover {
+  color: var(--first-color);
+  transform: translateY(-10px);
+}
+
+/* Banner */
+#banner {
+  background-color: #fafafa;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+  padding-top: 240px;
+  padding-bottom: 120px;
+}
+#banner h1 {
+  margin-top: -2em;
+  animation: fadeInDown 4s;
+}
+#banner #img1 {
+  animation: fadeInUp 9s;
+}
+#banner #img2 {
+  animation: zoomIn 10s;
+}
+
+#logo img {
+  cursor: pointer;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: var(--transition);
+}
+
+#logo img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+/* all section */
+.section {
+  padding-bottom: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sections img {
+  transition: all 0.4s ease-in 0s;
+}
+.sections img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+.sections h2 {
+  line-height: 1.3;
+}
+
+#section1 {
+  margin-bottom: -15em;
+}
+#section1 .block h1 {
+  margin-left: -0.5em;
+}
+#section1 .block p {
+  width: 90%;
+  margin-left: -0.5em;
+}
+
+#video {
+  background-color: var(--white);
+  padding-top: 2em;
+  padding-bottom: 20em;
+  margin-bottom: 1em;
+}
+#video p {
+  line-height: 1.6;
+}
+
+#testimonials img {
+  margin: 10px;
+}
+#testimonials .max-w-lg {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  padding-bottom: 45px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#testimonials .w-full:hover {
+  border: 1px solid var(--first-color);
+}
+#testimonials .max-w-lg h5 {
+  margin-bottom: 35px;
+}
+
+#scroll {
+  position: fixed;
+  place-items: center;
+  text-align: center;
+  display: none;
+  font-weight: lighter;
+  font-size: 2em;
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  right: 4rem;
+  cursor: pointer;
+  bottom: 5rem;
+  fill: var(--first-color);
+  border: none;
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  outline: none;
+  padding: 0.3em;
+  animation: fadeInUp 0.5s;
+  transition: all 0.3s ease-in 0s;
+}
+
+#scroll:hover {
+  transform: scale(1.1);
+}
+
+#message_btn {
+  position: fixed;
+  place-items: center;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2em;
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  right: 4rem;
+  cursor: pointer;
+  bottom: 9rem;
+  fill: #fff;
+  border: none;
+  background-color: #1e6e37;
+  border: 1px solid #1e6e37;
+  border-radius: 50px;
+  outline: none;
+  padding: 0.3em;
+  animation: fadeInUp 0.5s;
+  transition: all 0.3s ease-in 0s;
+}
+
+#message_btn:hover {
+  transform: scale(1.1);
+}
+
+#contact {
+  height: 400px;
+}
+
+#contact .block h1 {
+  background: -webkit-linear-gradient(305deg, #7704FA 40%, #647eff, #4ec9dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  margin-top: 0;
+  padding-top: 5em;
+  padding-bottom: 0em;
+  color: var(--white);
+}
+footer svg {
+  fill: var(--white);
+}
+footer h6 {
+  background: -webkit-linear-gradient(305deg, #7704FA 40%, #647eff, #4ec9dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer p {
+  line-height: 2;
+}
+footer a:hover {
+  text-decoration: underline;
+  transition: var(--transition);
+  color: var(--first-color);
+}
+
+/* ########################## CONTACT FORM PAGE ########################### */
+#infos {
+  overflow-y: scroll;
+}
+#infos input, #infos textarea, #infos select {
+  outline: none;
+  transition: var(--transition);
+  resize: none;
+  border: 0.8px solid #d7d7d7;
+  caret-color: var(--first-color);
+}
+#infos input:focus, #infos textarea:focus {
+  border: 0.8px solid var(--first-color);
+}
+#infos input::-moz-placeholder, #infos textarea::-moz-placeholder {
+  color: #000;
+}
+#infos input::placeholder, #infos textarea::placeholder {
+  color: #000;
+}
+
+#bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: linear-gradient(rgba(8, 2, 16, 0.887), rgba(119, 4, 250, 0.802)), url("../img/work.jpg");
+  padding-bottom: 1290px;
+}/*# sourceMappingURL=design.css.map */

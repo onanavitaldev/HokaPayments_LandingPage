@@ -1,0 +1,45 @@
+:root
+{
+    --white: #ffffff;
+    --black: #110807;
+    --first-color: #FF4400;
+    --hover: #d4410b;
+    --bgcolor: #110807;
+    --radius: 50px;
+    --transition: all 0.4s ease-in 0s;
+    --font: Montserrat;
+    --text: 16.5px;
+}
+
+/* All buttons of website */
+.button
+{
+    background-color: var(--first-color);
+    border: none;
+    border-radius: var(--radius);
+    color: var(--white);
+    cursor: pointer;
+    font-family: var(--font);
+    font-size: var(--text);
+    text-align: center;
+    transition: var(--transition);
+    width: auto;
+}
+.button:hover
+{
+    color: var(--white);
+    background-color: var(--bgcolor);
+}
+.button-two
+{
+    background-color: #f1f1f1;
+    border-radius: var(--radius);
+    border: none;
+    color: var(--hover);
+    cursor: pointer;
+    font-family: var(--font);
+    font-size: var(--text);
+    padding: 0.8em 1em;
+    text-align: center;
+    transition: var(--transition);
+}
